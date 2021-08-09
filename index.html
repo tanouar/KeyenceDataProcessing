@@ -14259,13 +14259,13 @@ a.anchor-link {
 
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="Comment-mesurer-une-r&#233;p&#233;tabilit&#233;-de-positionnement-&#224;-l'aide-du-t&#233;l&#233;m&#232;tre-laser-Keyence">Comment mesurer une r&#233;p&#233;tabilit&#233; de positionnement &#224; l'aide du t&#233;l&#233;m&#232;tre laser Keyence<a class="anchor-link" href="#Comment-mesurer-une-r&#233;p&#233;tabilit&#233;-de-positionnement-&#224;-l'aide-du-t&#233;l&#233;m&#232;tre-laser-Keyence">&#182;</a></h1><hr>
+<h1 id="How-To"><p style="text-align: center;">How To</p><a class="anchor-link" href="#How-To">&#182;</a></h1><h2 id="Mesurer-une-r&#233;p&#233;tabilit&#233;-de-positionnement"><p style="text-align: center;">Mesurer une r&#233;p&#233;tabilit&#233; de positionnement</p><a class="anchor-link" href="#Mesurer-une-r&#233;p&#233;tabilit&#233;-de-positionnement">&#182;</a></h2><hr>
 
 </div>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="I.-Configuration">I. Configuration<a class="anchor-link" href="#I.-Configuration">&#182;</a></h2><hr>
+<h2 id="I.-Configuration-logiciel-et-hardware">I. Configuration logiciel et hardware<a class="anchor-link" href="#I.-Configuration-logiciel-et-hardware">&#182;</a></h2><hr>
 
 </div>
 </div>
@@ -14301,58 +14301,34 @@ a.anchor-link {
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="II.-Interpr&#233;tation-des-donn&#233;es">II. Interpr&#233;tation des donn&#233;es<a class="anchor-link" href="#II.-Interpr&#233;tation-des-donn&#233;es">&#182;</a></h2><hr>
+<h2 id="II.-Outils-statistiques-pour-l'interpr&#233;tation-des-donn&#233;es">II. Outils statistiques pour l'interpr&#233;tation des donn&#233;es<a class="anchor-link" href="#II.-Outils-statistiques-pour-l'interpr&#233;tation-des-donn&#233;es">&#182;</a></h2><hr>
 
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[34]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">IFrame</span>
-<span class="n">IFrame</span><span class="p">(</span><span class="s2">&quot;./pdf/Kick off - Pédagogique avr21_continue_DA.pdf&quot;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">1600</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">800</span><span class="p">)</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[34]:</div>
-
-
-
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
-
-        <iframe
-            width="1600"
-            height="800"
-            src="./pdf/Kick off - Pédagogique avr21_continue_DA.pdf"
-            frameborder="0"
-            allowfullscreen
-        ></iframe>
-        
-</div>
-
-</div>
-
-</div>
-
-</div>
-
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="II.-Post-traitement-des-mesures-de-r&#233;p&#233;tabilit&#233;-issue-du-t&#233;l&#233;m&#232;tre-laser-Keyence">II. Post traitement des mesures de r&#233;p&#233;tabilit&#233; issue du t&#233;l&#233;m&#232;tre laser Keyence<a class="anchor-link" href="#II.-Post-traitement-des-mesures-de-r&#233;p&#233;tabilit&#233;-issue-du-t&#233;l&#233;m&#232;tre-laser-Keyence">&#182;</a></h2><hr>
+<blockquote><p>Le télémètre laser permet l'acquisition d'une mesure à chaque déclenchement du signal trigger. Chaque point est donc une mesure de position. L'échantillon minimum conseillé est de 11 points afin d'évaluer une répétabilité. Toutefois il sera d'usage d'acquérir au moins 100 points pour avoir un nombre d'échantillons suffisant pour utiliser les outils de statistiques descriptives avec un niveau de confiance satisfaisant.</p>
+</blockquote>
+<p>Les outils graphique :</p>
+<ol>
+<li>Le <a href="https://fr.wikipedia.org/wiki/Nuage_de_points_(statistique"><strong>nuage de points</strong></a>) permet d'illustrer les données mesurées</li>
+<li>La <a href="https://fr.wikipedia.org/wiki/Bo%C3%AEte_%C3%A0_moustaches"><strong>boite à moustache</strong></a> permet d'évaluer visuellement les interquartiles ainsi que la médiane de la série de données</li>
+<li><a href="https://fr.wikipedia.org/wiki/Histogramme"><strong>L'histogramme</strong></a> permet d'observer la repartitions des classes de points de mesures</li>
+<li>Le <a href="https://fr.wikipedia.org/wiki/Diagramme_quantile-quantile"><strong>QQ-Plot</strong></a> permet de vérifier que la série de données suit une loi normale</li>
+</ol>
+<p>Les indicateurs statistiques permettant de confirmer ou non une répétabilité sont :</p>
+<ol>
+<li>la <a href="https://fr.wikipedia.org/wiki/Valeur_p"><strong>p-value</strong></a></li>
+<li>La <a href="https://fr.wikipedia.org/wiki/Capabilit%C3%A9_machine"><strong>capabilité</strong></a> noté Cp</li>
+</ol>
+<p>Ces différents outils statistiques permettent donc de vérifier une répétabilité de positionnement à l'aide des mesures acquises via le télémètre laser Keyence.</p>
+<p>Tous ces indicateurs sont générés automatiquement à l'aide de la bibliothèque <code>Keyence1D</code> présenté dans la suite.</p>
+
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="III.-Post-traitement-des-mesures-de-r&#233;p&#233;tabilit&#233;-issue-du-t&#233;l&#233;m&#232;tre-laser-Keyence">III. Post traitement des mesures de r&#233;p&#233;tabilit&#233; issue du t&#233;l&#233;m&#232;tre laser Keyence<a class="anchor-link" href="#III.-Post-traitement-des-mesures-de-r&#233;p&#233;tabilit&#233;-issue-du-t&#233;l&#233;m&#232;tre-laser-Keyence">&#182;</a></h2><hr>
 
 </div>
 </div>
@@ -14467,7 +14443,8 @@ a.anchor-link {
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>De manière générale, on considère que si le test statistique donne une p-value &gt; 5%, alors la distribution suit une loi Normale. Dans le cas ou les mesures suivent une loi Normale <strong>et uniquement dans ce cas</strong>, alors il est beaucoup plus pratique d'utiliser l'indicateur de capabilité Cp :</p>
+<blockquote><p>De manière générale, on considère que si le test statistique donne une p-value &gt; 5%, alors la distribution suit une loi Normale. Dans le cas ou les mesures suivent une loi Normale <strong>et uniquement dans ce cas</strong>, alors il est beaucoup plus pratique d'utiliser l'indicateur de capabilité Cp :</p>
+</blockquote>
 $$Cp = \frac {IT}{6\sigma}$$<p>avec :</p>
 <ul>
 <li>Cp = Capabilité --&gt; <strong>On considère un processus capable si Cp &gt; 1.33</strong></li>
@@ -14574,60 +14551,11 @@ Distrib_Not_Norm.csv as Statistics=0.978, p=0.00000
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Le télémètre laser est capable d'acquérir plusieurs points de mesure pour évaluer une répétabilité. La fonction de déclenchement (Trigger) est à privilégier afin d'obtenir un jeu de données brutes exploitables en utilisant les outils de traitement de données du package <code>Keyence1D</code>.</p>
+<blockquote><p>Le télémètre laser est capable d'acquérir plusieurs points de mesure pour évaluer une répétabilité. La fonction de déclenchement (Trigger) est à privilégier afin d'obtenir un jeu de données brutes exploitables en utilisant les outils de traitement de données du package <code>Keyence1D</code>.</p>
 <p>Les valeurs Min et Max ne sont pas des indicateurs suffisant pour s'assurer que le positionnement d'un axe est répétable. L'estimation de p-value et de Cp sont des estimateurs statistiques plus pertinents. Le but est de s'assurer que les positions successives prises par l'axe seront toujours contenues dans l'intervalle de tolérance souhaitée.</p>
+</blockquote>
 
 </div>
-</div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Documentation technique :</p>
-
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[30]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">IFrame</span><span class="p">(</span><span class="s2">&quot;./pdf/Kick off - Pédagogique avr21_continue_DA.pdf&quot;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">980</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">500</span><span class="p">)</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[30]:</div>
-
-
-
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
-
-        <iframe
-            width="980"
-            height="500"
-            src="./pdf/Kick off - Pédagogique avr21_continue_DA.pdf"
-            frameborder="0"
-            allowfullscreen
-        ></iframe>
-        
-</div>
-
-</div>
-
-</div>
-
-</div>
-
 </div>
 </body>
 
